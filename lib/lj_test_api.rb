@@ -8,10 +8,9 @@ module LjTestApi
       bulk_data
     end
 
-    def self.department(parameter_option)
-      bulk_data = Unirest.get(
-        "https://data.cityofchicago.org/resource/tt4n-kn4t.json?department={parameter_option}"
-      ).body
+    def self.department(parameter)
+      bulk_data = Unirest.get("https://data.cityofchicago.org/resource/tt4n-kn4t.json?department=#{parameter.upcase}").body
+      bulk_data
     end
   end
 end
