@@ -13,9 +13,6 @@ module LjTestApi
       #   json.job_titles object["job_titles"]
       #   json.name object["name"]
       # end
-      data.each do |object|
-        return :json => object
-      end
     end
 # json.first_name employee.first_name
 # json.last_name employee.last_name
