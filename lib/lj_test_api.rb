@@ -1,12 +1,12 @@
-require "lj_test_api/version"
-require "unirest"
+require 'lj_test_api/version'
+require 'unirest'
+require 'jbuilder'
 
 module LjTestApi
   class ApiCall
     def self.url(api_endpoint)
       data = Unirest.get("#{api_endpoint}").body
-      data
-      
+      return :json => data
     end
 
     # def self.department(parameter)
