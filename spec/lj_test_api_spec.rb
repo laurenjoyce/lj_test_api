@@ -5,7 +5,11 @@ describe LjTestApi do
     expect(LjTestApi::VERSION).not_to be nil
   end
 
-  it "does something useful" do
-    expect(false).to eq(true)
+  # it "does something useful" do
+  #   expect(false).to eq(true)
+  # end
+
+  it "returns an array" do
+    expect(LjTestApi::Employee.department("asdf")).to eq([])
   end
 end
