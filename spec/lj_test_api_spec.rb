@@ -9,7 +9,7 @@ describe LjTestApi do
   #   expect(false).to eq(true)
   # end
 
-  it "returns an array" do
-    expect(LjTestApi::Employee.department("asdf")).to eq([])
-  end
+  # it "returns an array" do
+  #   expect(LjTestApi::ApiCall.url("test")).to eq(nil)
+  # end
 end

@@ -22,7 +22,7 @@ Or install it yourself as:
 
 ## Usage
 
-employees = LjTestApi::Employee.all
+employees = LjTestApi::ApiCall.url()
 
 ## Development
 
